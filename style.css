@@ -1,0 +1,257 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --alturaseccion: 610px;
+    --anchoseccion: 100px;
+    --colorbordeseccion: #000000;
+    --colorbordo: #730912;
+    --colorrojo: #a61c35;
+    --colornegro: #161719;
+    --colorgris: #80868a;
+    --colorblanco: #f2f2f2;
+}
+
+#one{
+    min-width: var(--anchoseccion);
+    min-height: var(--alturaseccion);
+    background-image: url("cosechadora.bmp");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#two{
+    background-color: var(--colorgris);
+    min-width: var(--anchoseccion);
+    min-height: var(--alturaseccion);
+}
+
+#three{
+    background-color: var(--colorgris);
+    min-width: var(--anchoseccion);
+    min-height: var(--alturaseccion);
+}
+
+#four{
+    background-color: var(--colorgris);
+    min-width: var(--anchoseccion);
+    min-height: calc(var(--alturaseccion) - 8.2rem);
+}
+
+.agradecimiento{
+    background-color: var(--colorgris);
+    color: var(--colornegro);
+    text-align: center;
+}
+
+#subtituloag{
+    margin-top: 7%;
+    font-size: 220%;
+}
+
+#parrafoag{
+    margin-top: 1rem;
+    max-width: 60%;
+    padding-left: 22%;
+    font-size: 120%;
+}
+
+.footerconteiner{
+    min-height: 4.78rem;
+    background-color: var(--colorrojo);
+    color: var(--colorblanco);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.contactos{
+    float: left;
+    padding: 0.5rem;
+    margin-right: 3rem;
+    text-align: center;
+}
+
+#contacto1{
+    margin-left: 26.5%;
+}
+
+.copyright{
+    background-color: var(--colorbordo);
+    color: var(--colorblanco);
+    text-align: center;
+    font-size: 120%;
+}
+
+.containerbordo{
+    background-color: var(--colorbordo);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.1rem;
+}
+
+.buttom{
+    background-color: var(--colorbordo);
+    color: var(--colorblanco);
+    font-size: 120%;
+    text-decoration: none;
+    border-style: solid;
+    border-color: var(--colornegro);
+    padding: 0.25rem;
+}
+
+.conteinerrojo{
+    background-color: var(--colorrojo);
+    color: var(--colornegro);
+}
+
+#servicios{
+    background-color: var(--colorgris);
+    color: var(--colorblanco);
+    padding: 0rem 0rem 1rem 0rem;
+    font-size: 140%;
+}
+
+#buttonhomeright{
+    background-color: var(--colorbordo);
+    color: var(--colorblanco);
+    text-decoration: none;
+    font-size: 80%;
+    border-style: solid;
+    border-color: var(--colornegro);
+    margin-top: 0rem;
+    padding: 0.25rem;
+    display: inline;
+    float: right;
+}
+
+
+#subservicios{
+    background-color: var(--colorbordo);
+    margin: 0rem 0rem 1rem 0rem;
+    padding: 1rem;
+    font-size: 120%;
+    text-decoration: underline;
+}
+
+.imagenservicios{
+    height: 15%;
+    width: 5%;
+    border-radius: 25%;
+    background-position: center center;
+    background-size: cover;
+    padding: 6rem;
+}
+
+#imgsembradora{
+    margin: 1.5rem 0rem 0rem 1rem;
+    background-image: url("siembra.bmp");
+    display: inline;
+    float: left;
+}
+
+#imgcosechadora{
+    margin-top: 2.5rem;
+    margin-right: 1rem;
+    background-image: url("cosecha.bmp");
+    display: inline;
+    float: right;
+}
+
+.descripcionservicios{
+    width: 73%;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: var(--colorrojo);
+    border-radius: 5%;
+}
+
+#descsiembra{
+    margin-right: 1rem;
+    display: inline;
+    float: right;
+}
+
+#psubtitulo{
+    text-decoration: underline;
+}
+
+#buttonhomeleft{
+    margin-top: 0rem;
+    margin-left: 0.5rem;
+    background-color: var(--colorbordo);
+    color: var(--colorblanco);
+    text-decoration: none;
+    font-size: 130%;
+    border-style: solid;
+    border-color: var(--colornegro);
+    padding: 0.25rem;
+    display: inline;
+    float: left;
+}
+
+#desccosecha{
+    margin-top: 2rem;
+    margin-left: 1rem;
+    display: inline;
+    float: left;
+}
+
+#formulario{
+    width: 35%;
+    margin-top: 7%;
+    display: inline;
+    float: left;
+    border-radius: 2%;
+}
+
+#usuario{
+    width: 40%;
+    background-color: var(--colorgris);
+    margin-top: 7%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: inline;    
+    float: left;
+}
+
+#subtitulo{
+    background-color: var(--colorgris);
+    color: var(--colornegro);
+    font-size: 170%;
+    text-decoration: underline;
+    padding: 0.5rem;
+}
+
+#subtituloformulario{
+    background-color: var(--colorbordo);
+    color: var(--colorblanco);
+    font-size: 170%;
+    text-decoration: underline;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 5%;
+}
+
+#texto{
+    margin-top: 5%;
+    font-size: 150%;
+    padding: 0.5rem;
+}
+
+.input{
+    margin-left: 30%;
+    margin-right: 10%;
+    margin-bottom: 1rem;
+    text-size-adjust: 120%;
+    padding: 0.5rem;
+}
+
+.botonenviar{
+    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+    margin-left: 45%;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+}
