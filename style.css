@@ -4,14 +4,15 @@
 }
 
 :root{
-    --alturaseccion: 610px;
-    --anchoseccion: 100px;
+    --alturaseccion: 100vh;
+    --anchoseccion: 100vh;
     --colorbordeseccion: #000000;
     --colorbordo: #730912;
     --colorrojo: #a61c35;
     --colornegro: #161719;
     --colorgris: #80868a;
     --colorblanco: #f2f2f2;
+    --transparente: rgba(0,0,0,.4)
 }
 
 #one{
@@ -39,6 +40,99 @@
     background-color: var(--colorgris);
     min-width: var(--anchoseccion);
     min-height: calc(var(--alturaseccion) - 8.2rem);
+}
+
+#five{
+    background-color: var(--colorgris);
+    min-width: var(--anchoseccion);
+    min-height: var(--alturaseccion);
+}
+
+.conteiner .box{
+    display: flex;
+    flex-direction: row;
+}
+
+.card{
+    position: relative;
+    width: 150px;
+    height: 200px;
+    margin-top: 3rem;
+    margin-left: 3.5rem;
+}
+
+.card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.card .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px var(--colornegro);
+}
+
+.card .front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: var(--colorblanco);
+    background: var(--transparente);
+    text-align: center;
+}
+
+.card .back{
+    transform: perspective(600px) rotateY(180deg);
+    background: var(--colornegro);
+    padding: 15px;
+    color: var(--colorblanco);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.card .back .link{
+    border-top: solid 1px var(--colorblanco);
+    height: 20px;
+    line-height: 30px;
+
+}
+
+.card .back .link a{
+    color: var(--colorblanco);
+}
+
+.card .back h3{
+    font-size: 25px;
+    margin-top: 5px;
+    letter-spacing: 1px;
+}
+
+.card .back p{
+    margin-top: 2px;
+    letter-spacing: 1px;
+}
+
+.card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back{
+    transform: perspective(600px) rotateY(360deg);
 }
 
 .agradecimiento{
